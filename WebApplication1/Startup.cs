@@ -5,9 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebApplication1.Data;
-using WebApplication1.Interfaces;
 using WebApplication1.Repository;
-using WebApplication1.Services;
 
 namespace WebApplication1
 {
@@ -25,7 +23,6 @@ namespace WebApplication1
         {
             services.AddDbContext<BookContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
-            services.AddSingleton<ICustomerService, CustomerService>();
             services.AddTransient<IBookRepository, BookRepository>();
         }
 
