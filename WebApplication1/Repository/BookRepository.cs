@@ -14,10 +14,9 @@ namespace WebApplication1.Repository
             _context = context;
         }
 
-        // public async Task<List<BooksDetail>> GetAllBooks()
-        // {
-        //     var Books = _context
-        //     return
-        // }
+        public async Task<List<BooksDetailDto>> GetAllBooks()
+        {
+            //var books= await _context.
+        }
     }
 }

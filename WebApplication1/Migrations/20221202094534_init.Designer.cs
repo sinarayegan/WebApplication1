@@ -9,7 +9,7 @@ using WebApplication1.Data;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(BookContext))]
-    [Migration("20221202072431_init")]
+    [Migration("20221202094534_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
