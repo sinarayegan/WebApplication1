@@ -16,7 +16,7 @@ namespace WebApplication1.Repository
 
         public async Task<List<BooksDetailDto>> GetAllBooks()
         {
-            //var books= await _context.
+            var books= await _context.
         }
     }
 }
