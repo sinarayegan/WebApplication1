@@ -1,0 +1,7 @@
+﻿namespace WebApplication1
+{
+    public class Test
+    {
+    GET https://localhost:44316/api/Books
+    }
+}
